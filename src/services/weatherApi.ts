@@ -39,42 +39,42 @@ function getEmojiIcon(iconCode: string): string {
 export function getWeatherTheme(iconCode: string): WeatherTheme {
   if (iconCode.startsWith('01d')) return {
     gradient: 'linear-gradient(160deg, #74b9ff 0%, #0984e3 100%)',
-    imageUrl: 'https://images.unsplash.com/photo-1601297183305-6df142704ea2?w=1600&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1646891662678-bc19f2ec296c?w=1920&q=80',
     textColor: '#fff',
   };
   if (iconCode.startsWith('01n')) return {
     gradient: 'linear-gradient(160deg, #2d3436 0%, #0a0a2e 100%)',
-    imageUrl: 'https://images.unsplash.com/photo-1651959976896-3b5f2eb1e179?w=1600&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1651959976896-3b5f2eb1e179?w=1920&q=80',
     textColor: '#fff',
   };
   if (iconCode.startsWith('02') || iconCode.startsWith('03') || iconCode.startsWith('04')) return {
     gradient: 'linear-gradient(160deg, #b2bec3 0%, #636e72 100%)',
-    imageUrl: 'https://images.unsplash.com/photo-1501630834273-4b5604d2ee31?w=1600&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1501630834273-4b5604d2ee31?w=1920&q=80',
     textColor: '#fff',
   };
   if (iconCode.startsWith('09') || iconCode.startsWith('10')) return {
     gradient: 'linear-gradient(160deg, #4a6fa5 0%, #2d3a4a 100%)',
-    imageUrl: 'https://images.unsplash.com/photo-1530743373890-f3c506b0b5b1?w=1600&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1530743373890-f3c506b0b5b1?w=1920&q=80',
     textColor: '#fff',
   };
   if (iconCode.startsWith('11')) return {
     gradient: 'linear-gradient(160deg, #2d3436 0%, #1a1a2e 100%)',
-    imageUrl: 'https://images.unsplash.com/photo-1605727216801-e27ce1d0cc28?w=1600&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1605727216801-e27ce1d0cc28?w=1920&q=80',
     textColor: '#fff',
   };
   if (iconCode.startsWith('13')) return {
     gradient: 'linear-gradient(160deg, #dfe6e9 0%, #b2bec3 100%)',
-    imageUrl: 'https://images.unsplash.com/photo-1491002052546-bf38f186af56?w=1600&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1491002052546-bf38f186af56?w=1920&q=80',
     textColor: '#1e293b',
   };
   if (iconCode.startsWith('50')) return {
     gradient: 'linear-gradient(160deg, #b2bec3 0%, #747d8c 100%)',
-    imageUrl: 'https://images.unsplash.com/photo-1580207868427-f019836acf26?w=1600&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1580207868427-f019836acf26?w=1920&q=80',
     textColor: '#fff',
   };
   return {
     gradient: 'linear-gradient(160deg, #74b9ff 0%, #0984e3 100%)',
-    imageUrl: 'https://images.unsplash.com/photo-1601297183305-6df142704ea2?w=1600&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1601297183305-6df142704ea2?w=1920&q=80',
     textColor: '#fff',
   };
 }
