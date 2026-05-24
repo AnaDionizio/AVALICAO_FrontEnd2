@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState } from 'react';
 import { Box, TextField, Button, Typography, CircularProgress } from '@mui/material';
 import SendRoundedIcon from '@mui/icons-material/SendRounded';
 
@@ -18,11 +18,6 @@ export default function Chat() {
   const [messages, setMessages] = useState<Message[]>([INITIAL]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
-  const bottomRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
-  }, [messages]);
 
   const sendMessage = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -66,7 +61,7 @@ export default function Chat() {
         border: '1px solid rgba(255,255,255,0.2)',
         borderRadius: 3,
         p: 2,
-        height: 200,
+        height: 400,
         overflowY: 'auto',
         display: 'flex',
         flexDirection: 'column',
@@ -98,8 +93,7 @@ export default function Chat() {
             <Typography variant="body2" sx={{ fontStyle: 'italic' }}>Gemini está pensando...</Typography>
           </Box>
         )}
-        <div ref={bottomRef} />
-      </Box>
+        </Box>
 
       {/* Input */}
       <Box component="form" onSubmit={sendMessage} sx={{ display: 'flex', gap: 1.5 }}>
