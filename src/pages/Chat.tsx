@@ -7,7 +7,7 @@ interface Message {
   text: string;
 }
 
-const GEMINI_API_KEY = 'AIzaSyDK9zto4Ti2JFZiR5xUqUz6V5pPua2mRXE';
+const GEMINI_API_KEY = 'AIzaSyCib4nZGeOygh1kxecVqUDhTrpT0w_b-10';
 
 const INITIAL: Message = {
   sender: 'gemini',
