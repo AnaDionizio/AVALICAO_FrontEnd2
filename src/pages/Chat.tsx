@@ -115,3 +115,4 @@ export default function Chat() {
     </Box>
   );
 }
+
